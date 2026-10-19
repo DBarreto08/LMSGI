@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario de Clase</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead {
+            background-color: #e0e0e0;
+        }
+
+        .recreo {
+            font-weight: bold;
+            letter-spacing: 4px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Horario de Clase</h1>
+
+    <table>
+
+        <!-- Encabezado de la tabla -->
+        <thead>
+            <tr>
+                <th>Tramo</th>
+                <th>Lunes</th>
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+
+        <!-- Contenido del horario -->
+        <tbody>
+
+            <tr>
+                <th>8:15</th>
+                <td rowspan="2">ADA</td>
+                <td rowspan="2">SIMR</td>
+                <td rowspan="3">PLE</td>
+                <td rowspan="3">PLE</td>
+                <td rowspan="2">ADA</td>
+            </tr>
+
+            <tr>
+                <th>9:15</th>
+            </tr>
+
+            <tr>
+                <th>10:15</th>
+                <td>PLE</td>
+                <td>ADA</td>
+                <td>PLE</td>
+            </tr>
+
+            <tr>
+                <th>11:15</th>
+                <td colspan="5" class="recreo">RECREO</td>
+            </tr>
+
+            <tr>
+                <th>11:45</th>
+                <td rowspan="3">SIMR</td>
+                <td>ADA</td>
+                <td rowspan="2">ADA</td>
+                <td rowspan="3">ADA</td>
+                <td>PLE</td>
+            </tr>
+
+            <tr>
+                <th>12:45</th>
+                <td rowspan="2">PLE</td>
+                <td rowspan="2">SIMR</td>
+            </tr>
+
+            <tr>
+                <th>13:45</th>
+                <td>TUA</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+
+</html>
